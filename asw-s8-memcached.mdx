@@ -1,14 +1,22 @@
-export { dark as theme } from 'mdx-deck/themes'
+export { poppins as theme } from 'mdx-deck/themes'
+import { Image } from 'mdx-deck'
+import { Head } from 'mdx-deck'
+import { Split } from 'mdx-deck/layouts'
+import { FullScreenCode } from 'mdx-deck/layouts'
+
+<Head>
+  <title>ASW Memcached</title>
+</Head>
 
 # ASW 2018-2019
 # Memcached
 
-**The team**
+## The team
 
-* Ignacio Montes Álvarez (UO257907)
-* Vladislav Stelmakh (UO257580)
-* Jose Manuel Estrada-Nora Muñoz (UO258815)
-* Luis Pastrana García (UO257809)
+- Ignacio Montes Álvarez (UO257907)
+- Vladislav Stelmakh (UO257580)
+- Jose Manuel Estrada-Nora Muñoz (UO258815)
+- Luis Pastrana García (UO257809)
 
 ---
 
@@ -20,7 +28,39 @@ export { dark as theme } from 'mdx-deck/themes'
 
 ---
 
-# Memcached architecture
+# Memcached architecture (I)
+Memcached follows a client-server architecture. 
+
+---
+
+export default Split
+
+<div>
+    <Image src="img/client-server-model.png" width="80%" size="100%" />
+</div>
+
+| Characteristics       | Description         | 
+| --------------------- |:------------------- | 
+| 1     | Clients and servers are physically separated, so, its functionality. This helps with independent development and scalability.     |
+| 2     | Functionality is divided into several servers (distributed system)                                                                |
+| 3     | Users query the server and then, the server answers back                                                                          |
+
+
+---
+
+# Memcached architecture (II)
+It's made up of four main components that work together to 
+retrieve data as **efficiently** as possible.
+
+---
+
+# Memcached architecture (III)
+| Component       | Description         | 
+| --------------- |:------------------- | 
+| Client software                       | List of available Memcached servers                   | 
+| A client-based hashing algorithm      | Chooses the server based on the key                   | 
+| Server software                       | Stores pairs of key/value into an internal hash table | 
+| LRU                                   | Determines when to remove old data or reuse memory    |
 
 ---
 
@@ -33,3 +73,15 @@ export { dark as theme } from 'mdx-deck/themes'
 ---
 
 # Our experience doing the build
+
+---
+
+# References
+
+- [Official page](https://memcached.org/)
+- [Official repository](https://github.com/memcached/memcached)
+- [Wikipedia](https://en.wikipedia.org/wiki/Memcached)
+- [AWS-Memcached](https://aws.amazon.com/es/memcached/)
+- [What's memcached](https://www.keycdn.com/support/what-is-memcached)
+
+
