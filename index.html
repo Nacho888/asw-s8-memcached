@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/monokai.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h1>Memcached</h1>
+					<ul>
+						<li>Ignacio Montes</li>
+						<li>Luis Pastrana</li>
+						<li>Jose Manuel</li>
+						<li>Vladislav Stelmakh</li>
+					</ul>
+				</section>
+				<section>
+					<h2>What IS memcached?</h2>
+				</section>
+				<section style="text-align: left;">
+					<p>Memcached is an open source distributed memory caching system</p>
+					<ul style="padding-left: 10%;">
+						<li>High-performance</li>
+						<li>Scalable</li>
+						<li>Popular in real time applications</li>
+					</ul>
+					<p>Memcached was launched in 2009, based in its precedesor Memcache (2004) as a replacement as more updated version giving up to 16% more performance according to benchmarks</p>
+				</section>
+				<section>
+						<h2>How does it work?</h2>
+				</section>
+				<section>
+					<p class="fragment">Use of key value pairs 🔑</p>
+					<p class="fragment">Keeping data in memory to reduce database load and speed up the app 🚀</p>
+				</section>
+				<section>
+					<p class="fragment fade-up">Using</p>
+					<p class="fragment">Cache: A copy of real data with faster access​</p>
+					<p class="fragment">Session storage: manage session data for internet-scale applications</p>
+				</section>
+				<section>
+					<h4>In-Depth 🔎</h4>
+					<ul style="list-style-type: none;">
+						<li class="fragment">Servers mantain a key-value associative array (<u>HashMap</u>)</li>
+						<li class="fragment">It’s populated by the clients and queried by </li>
+						<li class="fragment"><u>Keys</u> are up to 250 bytes long the <u>values</u> can be close to 1 megabyte in size​</li>
+						<li class="fragment">It’s accessed through port 11211 (supports both TCP and UDP)</li>
+					</ul>
+				</section>
+			</div>
+		</div>
+
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true }
+				]
+			});
+		</script>
+	</body>
+</html>
