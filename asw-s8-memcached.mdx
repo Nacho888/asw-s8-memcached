@@ -1,5 +1,6 @@
 export { poppins as theme } from 'mdx-deck/themes'
 import { Image } from 'mdx-deck'
+import Table from './arch1table.md'
 import { Head } from 'mdx-deck'
 import { Split } from 'mdx-deck/layouts'
 import { FullScreenCode } from 'mdx-deck/layouts'
@@ -38,12 +39,10 @@ export default Split
 <div>
     <Image src="img/client-server-model.png" width="80%" size="100%" />
 </div>
-
-| Characteristics       | Description         | 
-| --------------------- |:------------------- | 
-| 1     | Clients and servers are physically separated, so, its functionality. This helps with independent development and scalability.     |
-| 2     | Functionality is divided into several servers (distributed system)                                                                |
-| 3     | Users query the server and then, the server answers back                                                                          |
+<div>
+  <Table />
+</div>
+                                                                        |
 
 
 ---
