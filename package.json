@@ -1,0 +1,15 @@
+{
+  "name": "asw-s8-memcached",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "mdx-deck asw-s8-memcached.mdx",
+    "build": "mdx-deck build asw-s8-memcached.mdx"
+  },
+  "contributors": ["Ignacio Montes Álvarez (UO257907)", "Vladislav Stelmakh (UO257580)", "Jose Manuel Estrada-Nora Muñoz(UO258815)", "Luis Pastrana García (UO257809)"],
+  "license": "MIT",
+  "dependencies": {
+    "mdx-deck": "^2.0.6"
+  }
+}
