@@ -34,5 +34,8 @@ while True:
     queryName = input("Pokemon name (e to exit): ")
     if(queryName == 'e'):
         exit()
-    data = getData(queryName)
-    printData(data)
+    try:
+        data = getData(queryName)
+        printData(data)
+    except:
+        print("That's not a pokemon you dumbass")
