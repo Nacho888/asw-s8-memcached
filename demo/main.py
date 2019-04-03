@@ -38,4 +38,6 @@ while True:
         data = getData(queryName)
         printData(data)
     except:
+        print()
         print("That's not a pokemon you dumbass")
+        print()
