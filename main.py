@@ -31,7 +31,7 @@ def printData(data):
     print()
 
 while True: 
-    queryName = input("Pokemon name (e to exit): ")
+    queryName = input("Pokémon name (e to exit): ")
     if(queryName == 'e'):
         exit()
     try:
@@ -39,5 +39,5 @@ while True:
         printData(data)
     except:
         print()
-        print("That's not a pokemon you dumbass")
+        print("That's not a pokémon you dumbass")
         print()
